@@ -81,3 +81,14 @@ Settings
 `JQUERY_URL`
 :   By default, jQuery will be loaded from Google's CDN. If you would prefer to
     use a different version put the full URL here.
+
+Tests
+-----------------
+
+Make sure you have `tox <http://tox.testrun.org/>`_ installed, then type
+
+::
+
+    tox
+
+from the source checkout.
