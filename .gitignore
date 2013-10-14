@@ -1,4 +1,6 @@
 .tmp*
+.tox/*
+*.egg-info/*
 *.pyc
 *.DS_Store
 .pydevproject
