@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 from django.db.models.fields.related import ForeignKey
 
 try:
@@ -16,7 +17,7 @@ class ChainedForeignKey(ForeignKey):
     """
     def __init__(self, to, chained_field=None, chained_model_field=None,
                  show_all=False, auto_choose=False, view_name=None, **kwargs):
-        if isinstance(to, basestring):
+        if isinstance(to, str):
             self.app_name, self.model_name = to.split('.')
         else:
             self.app_name = to._meta.app_label
